@@ -1,0 +1,97 @@
+body {
+	background-color: ghostwhite;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Georgia;
+}
+
+p {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.formInput {
+	display: inline-block;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.homeTile {
+	height: 150px;
+	width: 20%;
+	padding: 1px;
+	background-color: skyblue;
+	border-radius: 5px;
+	display: inline-block;
+	float: left;
+}
+
+.houseIcon {
+	float: left;
+	height: 100%;
+}
+
+.inputHeader {
+	font-size: 25px;
+}
+
+.taskHeader {
+	height: 75px;
+	border: 1px solid grey;
+}
+
+.taskTitle {
+	float: left;
+}
+
+.uInput {
+	border-radius: 5px;
+	background-color: lightgrey;
+	height: 25px;
+	font-size: 25px;
+}
+
+#header {
+	background-image: url("images/homeBanner.jpg");
+	height: 120px;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#loginForm {
+	padding: 10px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 2px solid grey;*/
+	border-radius: 25px;
+	width: 500px;
+	height: 300px;
+	background-color: skyblue;
+}
+
+#loginHeader {
+	color: cornflowerblue;
+}
+
+#main {
+	text-align: center;
+}
+
+#tileDiv {
+	/*border: 2px solid grey;*/
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	font-size: 75px;
+	font-family: Tahoma, sans-serrif;
+	color: cornflowerblue;
+}
