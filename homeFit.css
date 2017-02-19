@@ -44,8 +44,12 @@ a {
 }
 
 .taskLevel {
-	height: 33%;
-	
+	height: 33%;	
+}
+
+.taskLevel img {
+	width: 20%;
+	margin-left: 10%;
 }
 
 .taskTitle {
