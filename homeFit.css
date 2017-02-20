@@ -60,11 +60,6 @@ a {
 	float: left;
 }
 
-.taskAction {
-	width: 15%;
-	height: 10%;
-}
-
 .uInput {
 	border-radius: 5px;
     background-color: lightgrey;
@@ -173,4 +168,21 @@ a {
 
 #loginButton:hover {
 	background-color: rgb(255, 150, 75);
+}
+
+#tasks {
+	display: none;
+	background-color: orange;
+}
+
+#tasks span {
+	display: block;
+	padding-left: 5%;
+	background-color: blue;
+	font-size: 24pt;
+}
+
+.taskAction {
+	width: 15%;
+	margin-left: 13.75%; 
 }
