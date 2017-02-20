@@ -44,7 +44,7 @@ a {
 }
 
 .taskLevel {
-	height: 33%;	
+	max-height: 33%;	
 }
 
 .taskLevel img {
@@ -54,6 +54,11 @@ a {
 
 .taskTitle {
 	float: left;
+}
+
+.taskAction {
+	width: 15%;
+	height: 10%;
 }
 
 .uInput {
@@ -107,9 +112,10 @@ a {
 
 #mainContent {
 	float: right;
-	width: 85%;
+	width: 83%;
 	height: 800px;
 	background-color: white;
+	padding: 1%;
 }
 
 #sidebar {
@@ -118,6 +124,11 @@ a {
 	width: 13%;
 	background-color: lightgrey;
 	height: 800px;
+}
+
+#tagLine {
+	color: rgb(70, 100, 118);
+	font-style: italic;
 }
 
 #tileDiv {
@@ -130,5 +141,6 @@ a {
 #title {
 	font-size: 75px;
 	font-family: Tahoma, sans-serrif;
-	color: cornflowerblue;
+	color: rgb(70, 100, 118);
 }
+
