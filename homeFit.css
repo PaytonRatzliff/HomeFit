@@ -173,16 +173,35 @@ a {
 #tasks {
 	display: none;
 	background-color: orange;
+	padding: 5px;
+	position: relative;
 }
 
-#tasks span {
+#close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 18pt;
+}
+
+.taskBar {
 	display: block;
 	padding-left: 5%;
 	background-color: blue;
 	font-size: 24pt;
+	margin-bottom: 5px;
+	border-radius: 20px;
+}
+
+#tasks header {
+	text-align: center;
+	font-size: 18pt;
 }
 
 .taskAction {
 	width: 15%;
-	margin-left: 13.75%; 
+	margin-left: 13.75%;
+	border-radius: 50%;
+	display: inline;
+	background-color: white;
 }
