@@ -6,7 +6,7 @@
 		<script src="taskScript.js" type="text/javascript"></script>
 	</head>
 	
-	<body>
+	<body id="taskView">
 		<div id="content">
 		
 		
@@ -31,19 +31,37 @@
 				</div>
 			</div>
 			
-			<header id="message">You have 6 uncompleted tasks. <a href="homeFit.html">Help Me Fix This</a></header>
+			<header id="message">You have 6 uncompleted tasks. <a href="payment.html">Help Me Fix This</a></header>
 		</div>
 		
 		
 			<div id=tasks>
 				<header>HVAC Tasks</header>
 				<span id="close">&#10006;</span>
-				<span class="taskBar">1) Drain natural gas tank annually</span>
-				<span class="taskBar">2) Clean air filters 2x annually</span>
-				<span class="taskBar">3) Change furnace filters</span>
-				<span class="taskBar">4) Check Fireplace dampers</span>
-				<span class="taskBar">5) Clean HVAC return vents</span>
-				<span class="taskBar">6) Check for asbestos in heating pipes</span>
+				<div class="taskBar">
+					<span>1) Check and Maintain Heating System</span>
+					<span class="helpMe" id="instructions">?</span>
+				</div>
+				<div class="taskBar">
+					<span>2) Fireplace Maintenance & Service</span>
+					<span class="helpMe">?</span>
+				</div>
+				<div class="taskBar">
+					<span>3) Change Furnace Filters</span>
+					<span class="helpMe">?</span>
+				</div>
+				<div class="taskBar">
+					<span>4) Check Fireplace Dampers</span>
+					<span class="helpMe">?</span>
+				</div>
+				<div class="taskBar">
+					<span>5) Clean HVAC Filters</span>
+					<span class="helpMe">?</span>
+				</div>
+				<div class="taskBar">
+					<span>6) Check for asbestos in heating pipes</span>
+					<span class="helpMe">?</span>
+				</div>
 					<img class="taskAction" src="images/tbd.jpg">
 					<img class="taskAction" src="images/tbd.jpg">
 					<img class="taskAction" src="images/tbd.jpg">

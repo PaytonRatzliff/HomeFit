@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="homeFit.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script src="node_modules/angular/angular.js"></script> 
+		<script src="node_modules/angular-aria/angular-aria.js"></script> 
+		<script src="node_modules/angular-animate/angular-animate.js"></script> 
+		<script src="node_modules/angular-material/angular-material.js"></script> 
+	</head>
+	
+	<body>
+		<div id="header"></div>
+		<div id="main">
+			<header id="title">Home Fit</header>
+			<p id="tagLine">Enabling Home Owners to manage, track, and find solutions for their home maintenance needs.</p>
+			<form action="taskView.html" id="loginForm">
+				<div class="formInput">
+					<h2 class="inputHeader">User Name:</h2>
+					<br>
+					<input type="text" name="UserName" class="uInput">
+				</div>
+				<div class="formInput">
+					<h2 class="inputHeader">Password:</h2>
+					<br>
+					<input type="password" name="Password" class="uInput">
+				</div>
+				<br>
+				<!-- <input type="submit" value="Sign In" id="loginButton"> -->
+				<button id="loginButton">Sign In</button>
+			</form>
+		</div>
+		
+	</body>
+</html>
