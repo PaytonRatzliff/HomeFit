@@ -57,7 +57,7 @@ table {
 }
 
 .taskLevel {
-	max-height: 33%;	
+	max-height: 33%;
 }
 
 .taskLevel img {
@@ -100,7 +100,7 @@ table {
 }
 
 #icon {
-	width: 75%;
+	width: 140%;
 	display: block;
 	margin: auto;
 }
@@ -128,7 +128,6 @@ table {
 	float: right;
 	width: 83%;
 	height: 750px;
-	background-color: white;
 	padding: 1%;
 }
 
@@ -185,8 +184,10 @@ table {
 	bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 24pt;
+	font-size: 21pt;
 	background-color: lightgrey;
+	font-family: 'Open Sans', serif;
+	font-weight:bold
 }
 
 #tasks {
@@ -211,10 +212,15 @@ table {
 .taskBar {
 	display: block;
 	padding-left: 5%;
-	background-color: blue;
-	font-size: 24pt;
+	background-color: skyblue;
+	font-size: 21pt;
 	margin-bottom: 5px;
 	border-radius: 20px;
+	font-family: 'Open Sans', serif;
+}
+
+.taskBar:hover {
+	font-weight:bold;
 }
 
 #tasks header {
@@ -223,11 +229,17 @@ table {
 }
 
 .taskAction {
-	width: 15%;
+	width: 10%;
 	margin-left: 13.75%;
 	border-radius: 50%;
 	display: inline;
-	background-color: white;
+}
+
+.taskActionReminder {
+	width: 16%;
+	margin-left: 13.75%;
+	border-radius: 50%;
+	display: inline;
 }
 
 .helpMe {
