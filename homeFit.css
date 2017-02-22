@@ -188,7 +188,8 @@ table {
 
 #tasks {
 	display: none;
-	background-color: orange;
+	background-color: lightgrey;
+	border: 1px solid black;
 	padding: 5px;
 	position: relative;
 }
