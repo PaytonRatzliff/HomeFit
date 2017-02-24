@@ -1,5 +1,5 @@
 window.onload = function() {
-	document.getElementById("clickable").onclick = function(){loadTasks()};
+	document.getElementById("HVACButton").onclick = function(){loadTasks()};
 	document.getElementById("close").onclick = function(){closeTasks()};
 	document.getElementById("instructions").onclick = function(){instructions()};
 };

@@ -15,20 +15,20 @@
 				<img src="images/houseIcon.jpg" id="icon" />
 			</div>
 			<div id="mainContent">
-				<div class="taskLevel">
-						<img src="images/Icons/1.Door.jpg"/>
-						<img src="images/Icons/2.Electricity.jpg"/>
-						<img src="images/Icons/3.Extierior.jpg"/>
+				<div class="taskButtons">
+					<button id="DoorButton"></button>
+					<button id="ElectricalButton"></button>
+					<button id="ExteriorButton"></button>
 				</div>
-				<div class="taskLevel">
-						<img src="images/Icons/Floor.jpg"/>
-						<img src="images/Icons/Air conditioning.jpg" id="clickable"/>
-						<img src="images/Icons/Interior.jpg"/>
+				<div class="taskButtons">
+					<button id="FloorButton"></button>
+					<button id="HVACButton"></button>
+					<button id="InteriorButton"></button>
 				</div>
-				<div class="taskLevel">
-						<img src="images/Icons/Kitchen.jpg"/>
-						<img src="images/Icons/Pipe.jpg"/>
-						<img src="images/Icons/Roof.jpg"/>
+				<div class="taskButtons">
+					<button id="KitchenButton"></button>
+					<button id="PlumbingButton"></button>
+					<button id="RoofButton"></button>
 				</div>
 			</div>
 			
@@ -37,35 +37,39 @@
 		
 		
 			<div id=tasks>
-				<header>HVAC Tasks</header>
 				<span id="close">&#10006;</span>
 				<div class="taskBar">
-					<span>1) Change Furnace Filters</span>
-					<span class="helpMe" id="instructions">?</span>
+					<span id="instructions">1) Change Furnace Filters</span>
 				</div>
 				<div class="taskBar">
 					<span>2) Fireplace Maintenance & Service</span>
-					<span class="helpMe">?</span>
 				</div>
 				<div class="taskBar">
 					<span>3) Check and Maintain Heating System</span>
-					<span class="helpMe">?</span>
 				</div>
 				<div class="taskBar">
 					<span>4) Check Fireplace Dampers</span>
-					<span class="helpMe">?</span>
 				</div>
 				<div class="taskBar">
 					<span>5) Clean HVAC Filters</span>
-					<span class="helpMe">?</span>
 				</div>
 				<div class="taskBar">
 					<span>6) Check for asbestos in heating pipes</span>
-					<span class="helpMe">?</span>
 				</div>
-					<img class="taskAction" src="images/I'm done with this task.png">
-					<img class="taskActionReminder" src="images/Send me a text reminder.png">
-					<img class="taskAction" src="images/Not relevant to my home.png">
+				<div class="taskButtons">
+					<span class="DoneButtonGroup">
+						<span class="tooltipDone">I'm done with these tasks.</span>
+						<button id="DoneButton"></button>
+					</span>
+					<span class="ReminderButtonGroup">
+						<span class="tooltipReminder">Send me a text and email reminder.</span>
+						<button id="ReminderButton"></button>
+					</span>
+					<span class="NotRelevantButtonGroup">
+						<span class="tooltipNotRelevant">Not relavant to my home.</span>
+						<button id="NotRelevantButton"></button>
+					</span>
+				</div>
 			</div>
 	</body>
 </html>

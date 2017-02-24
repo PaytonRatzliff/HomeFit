@@ -56,16 +56,6 @@ table {
 	border: 1px solid grey;
 }
 
-.taskLevel {
-	max-height: 33%;
-}
-
-.taskLevel img {
-	width: 16.5%;
-	margin-left: 10%;
-	margin-bottom: 30px;
-}
-
 .taskTitle {
 	float: left;
 }
@@ -228,23 +218,140 @@ table {
 	font-size: 18pt;
 }
 
-.taskAction {
-	width: 10%;
-	margin-left: 13.75%;
-	border-radius: 50%;
-	display: inline;
+.taskButtons {
+	text-align: center;
+	margin: 10px;
 }
 
-.taskActionReminder {
-	width: 16%;
-	margin-left: 13.75%;
-	border-radius: 50%;
-	display: inline;
+.DoneButtonGroup:hover .tooltipDone, .ReminderButtonGroup:hover .tooltipReminder, .NotRelevantButtonGroup:hover .tooltipNotRelevant {
+	visibility: visible;
 }
 
-.helpMe {
-	position: absolute;
-	right: 1%;
+.tooltipDone, .tooltipReminder, .tooltipNotRelevant {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+}
+
+#DoneButton, #ReminderButton, #NotRelevantButton{
+	background-size: 100px 100px;
+	border-radius: 50%;
+	height: 100px;
+    width: 100px;
+	border-style: none;
+	cursor: pointer;
+	margin: 40px;
+}	
+
+#DoneButton {
+    background-image: url( 'images/DoneButton.png' );
+}
+
+#ReminderButton {
+    background-image: url( 'images/ReminderButton.png' );
+}
+
+#NotRelevantButton {
+    background-image: url( 'images/NotRelevantButton.png' );
+}
+
+#DoorButton, #ElectricalButton, #ExteriorButton, #FloorButton, #InteriorButton, #KitchenButton, #PlumbingButton, #RoofButton {
+	background-size: 200px 200px;
+	height: 200px;
+    width: 200px;
+	border-style: none;
+	cursor: pointer;
+	margin: 20px;
+	background-color: transparent;
+}
+
+#HVACButton {
+	background-size: 212px 212px;
+	height: 212px;
+    width: 212px;
+	border-style: none;
+	cursor: pointer;
+	margin: 15px;
+	background-color: transparent;	
+}
+
+#DoorButton {
+    background-image: url( 'images/Icons/Door.png' );
+}
+
+#ElectricalButton {
+    background-image: url( 'images/Icons/Electrical.png' );
+}
+
+#ExteriorButton {
+    background-image: url( 'images/Icons/Exterior.png' );
+}
+
+#FloorButton {
+    background-image: url( 'images/Icons/Floor.png' );
+}
+
+#HVACButton {
+    background-image: url( 'images/Icons/HVAC.png' );
+}
+
+#InteriorButton {
+    background-image: url( 'images/Icons/Interior.png' );
+}
+
+#KitchenButton {
+    background-image: url( 'images/Icons/Kitchen.png' );
+}
+
+#PlumbingButton {
+    background-image: url( 'images/Icons/Plumbing.png' );
+}
+
+#RoofButton {
+    background-image: url( 'images/Icons/Roof.png' );
+}
+
+/*hover effect*/
+#DoorButton:hover {
+    background-image: url( 'images/Icons/Door-hover.png' );
+}
+
+#ElectricalButton:hover {
+    background-image: url( 'images/Icons/Electrical-hover.png' );
+}
+
+#ExteriorButton:hover {
+    background-image: url( 'images/Icons/Exterior-hover.png' );
+}
+
+#FloorButton:hover {
+    background-image: url( 'images/Icons/Floor-hover.png' );
+}
+
+#HVACButton:hover {
+    background-image: url( 'images/Icons/HVAC-hover.png' );
+}
+
+#InteriorButton:hover {
+    background-image: url( 'images/Icons/Interior-hover.png' );
+}
+
+#KitchenButton:hover {
+    background-image: url( 'images/Icons/Kitchen-hover.png' );
+}
+
+#PlumbingButton:hover {
+    background-image: url( 'images/Icons/Plumbing-hover.png' );
+}
+
+#RoofButton:hover {
+    background-image: url( 'images/Icons/Roof-hover.png' );
 }
 
 #payments {
@@ -258,6 +365,13 @@ table {
 }
 
 .instruct {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:5em;
+}
+
+.instructHeader {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
