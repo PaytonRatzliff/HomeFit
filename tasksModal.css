@@ -124,3 +124,33 @@
 	font-weight:bold;
 	color: darkorange;
 }
+
+
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: gray;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: red;
+}
+input[type="checkbox"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    content: "\2713";
+    color: #fff;
+    /* The following positions my tick in the center, 
+     * but you could just overlay the entire box
+     * with a full after element with a background if you want to */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);     
+}
