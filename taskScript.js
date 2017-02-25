@@ -5,13 +5,22 @@ window.onload = function() {
 };
 
 function closeTasks() {
-	document.getElementById("tasks").style.display = "none";
+	document.getElementById("tasksModel").style.display = "none";
 }
 
 function loadTasks() {
-	document.getElementById("tasks").style.display = "block";
+	document.getElementById("tasksModel").style.display = "block";
 }
 
 function instructions() {
 	window.open("instructions.html", '_blank');
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	// Get the modal
+	var tasksModel = document.getElementById('tasksModel');
+    if (event.target == tasksModel) {
+        tasksModel.style.display = "none";
+    }
 }

@@ -180,85 +180,13 @@ table {
 	font-weight:bold
 }
 
-#tasks {
-	display: none;
-	background-color: lightgrey;
-	border: 1px solid black;
-	padding: 5px;
-	position: relative;
-}
-
-#close {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	font-size: 18pt;
-}
-
 #taskView {
 	background-color: lightgrey;
-}
-
-.taskBar {
-	display: block;
-	padding-left: 5%;
-	background-color: skyblue;
-	font-size: 21pt;
-	margin-bottom: 5px;
-	border-radius: 20px;
-	font-family: 'Open Sans', serif;
-}
-
-.taskBar:hover {
-	font-weight:bold;
-}
-
-#tasks header {
-	text-align: center;
-	font-size: 18pt;
 }
 
 .taskButtons {
 	text-align: center;
 	margin: 10px;
-}
-
-.DoneButtonGroup:hover .tooltipDone, .ReminderButtonGroup:hover .tooltipReminder, .NotRelevantButtonGroup:hover .tooltipNotRelevant {
-	visibility: visible;
-}
-
-.tooltipDone, .tooltipReminder, .tooltipNotRelevant {
-    visibility: hidden;
-    width: 150px;
-    background-color: black;
-    color: #fff;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-}
-
-#DoneButton, #ReminderButton, #NotRelevantButton{
-	background-size: 100px 100px;
-	border-radius: 50%;
-	height: 100px;
-    width: 100px;
-	border-style: none;
-	cursor: pointer;
-	margin: 40px;
-}	
-
-#DoneButton {
-    background-image: url( 'images/DoneButton.png' );
-}
-
-#ReminderButton {
-    background-image: url( 'images/ReminderButton.png' );
-}
-
-#NotRelevantButton {
-    background-image: url( 'images/NotRelevantButton.png' );
 }
 
 #DoorButton, #ElectricalButton, #ExteriorButton, #FloorButton, #InteriorButton, #KitchenButton, #PlumbingButton, #RoofButton {
@@ -353,6 +281,7 @@ table {
 #RoofButton:hover {
     background-image: url( 'images/Icons/Roof-hover.png' );
 }
+
 
 #payments {
 	width: 75%;
