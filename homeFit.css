@@ -1,5 +1,5 @@
 body {
-	background-color: ghostwhite;
+	background-color: white;
 	margin: 0px;
 	font-family: Georgia;
 	height: 100%;
@@ -125,7 +125,7 @@ table {
 	padding: 1%;
 	float: left;
 	width: 13%;
-	background-color: ghostwhite;
+	background-color: white;
 	height: 750px;
 }
 
@@ -149,7 +149,7 @@ table {
     margin-top: 30px;
 }
 
-#loginButton {
+.orangeButton {
 	border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -165,6 +165,13 @@ table {
     border-radius: 8px;
 }
 
+.sellButton {
+}
+
+#loginButton {
+	
+}
+
 #loginButton:hover {
 	background-color: rgb(255, 150, 75);
 }
@@ -174,7 +181,7 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 21pt;
-	background-color: ghostwhite;
+	background-color: white;
 	font-family: 'Open Sans', serif;
 	font-weight:bold;
 }
@@ -191,7 +198,7 @@ table {
 }
 
 #taskView {
-	background-color: ghostwhite;
+	background-color: white;
 }
 
 .taskButtons {
@@ -301,6 +308,10 @@ table {
 	width: 20%;
 	padding-left: 5px;
     padding-right: 5px;
+}
+
+#payments p {
+	margin-bottom: 5px;
 }
 
 .instruct {
