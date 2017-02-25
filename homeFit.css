@@ -125,7 +125,7 @@ table {
 	padding: 1%;
 	float: left;
 	width: 13%;
-	background-color: lightgrey;
+	background-color: ghostwhite;
 	height: 750px;
 }
 
@@ -175,13 +175,13 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 21pt;
-	background-color: lightgrey;
+	background-color: ghostwhite;
 	font-family: 'Open Sans', serif;
 	font-weight:bold
 }
 
 #taskView {
-	background-color: lightgrey;
+	background-color: ghostwhite;
 }
 
 .taskButtons {
