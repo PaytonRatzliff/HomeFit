@@ -4,10 +4,17 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="homeFit.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(function(){
+  				$("#menu").load("navbar.html");
+			});
+		</script>
 	</head>
 	
 	<body>
 		<div id="header"></div>
+			<div id="menu"></div>
 			<div id="main">
 				<header id="title">Home Maintenance Solutions and Pricing</header>
 					<table id="payments" border="1">
