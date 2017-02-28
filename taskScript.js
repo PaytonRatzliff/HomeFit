@@ -51,19 +51,26 @@ function tasksNotRelevant() {
 
 function sendReminder() {
 
-	// var checkBoxes = document.getElementsByName('checkBoxName');
-	// for(var i = 0; i < checkBoxes.length; ++i)
-	// {
-	// 	if (checkBoxes[i].checked)
-	// 	{
-	// 		alert("A reminder has been sent to your email and phone.");
-	// 		return;
-	// 	}
-	// }
+	var numChecked = 0;
+	var checkBoxes = document.getElementsByName('checkBoxName');
+	for(var i = 0; i < checkBoxes.length; ++i)
+	{
+		if (checkBoxes[i].checked)
+		{
+			numChecked = numChecked + 1;
+		}
+	}
+
+	if (numChecked == 0)
+	{
+		alert("Please check one or more tasks for the reminder notification");
+	}
+
+			alert("A reminder has been sent to your email and phone.");
 
 	// node SendSMS.js
 
-	//alert("Please check one or more tasks for the reminder notification");
+
 	//var response = httpGet("https://api.tropo.com/1.0/sessions?action=create&token=4c56634e4e634f61486763656856424f496e4d6f69645447444b6962626c706a50634f634648724f786d4458");
 	//alert(response)
 	alert("0")
