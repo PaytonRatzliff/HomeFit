@@ -81,7 +81,7 @@ function sendReminder() {
     xmlHttp.open( "POST", "https://api.twilio.com/2010-04-01/Accounts/AC75bccad271450edbcf17ff5d922f3e4a/Messages.json", false ); // false for synchronous request
     xmlHttp.setRequestHeader("Authorization", "Basic QUM3NWJjY2FkMjcxNDUwZWRiY2YxN2ZmNWQ5MjJmM2U0YTo5ZTg5OTVjZDU0MWNhOTllNzQ1MjE0MjNjOTk1ZjMyYw==");
     xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-    xmlHttp.send('To=4255771308&From=%2B12069008210&Body=' + body);
+    // xmlHttp.send('To=4255771308&From=%2B12069008210&Body=' + body);
 
 
     // Send Email Notification
@@ -93,7 +93,7 @@ function sendReminder() {
 	message_body: body,
 	};
 
-	emailjs.send(service_id,template_id,template_params);
+	// emailjs.send(service_id,template_id,template_params);
 
 
 	alert("A reminder has been sent to your email and phone for the following tasks:\n" + tasksText);
