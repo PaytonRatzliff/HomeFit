@@ -22,6 +22,18 @@ table {
 	margin-top: 30px;
 }
 
+#buttonRow, #buttonRow td {
+	border-top: 0px;
+}
+
+#buttonRow button {
+	margin: 0px;
+}
+
+#optionsRow, #optionsRow td {
+	border-bottom: 0px;
+}
+
 .formInput {
 	display: inline-block;
 	margin-bottom: 10px;
@@ -165,11 +177,9 @@ table {
     border-radius: 8px;
 }
 
-.sellButton {
-}
-
-#loginButton {
-	
+.service {
+	font-weight: bold;
+	font-size: 14pt;
 }
 
 #loginButton:hover {
