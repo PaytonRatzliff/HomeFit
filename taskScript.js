@@ -88,6 +88,7 @@ function sendReminder() {
     var service_id = 'gmail';
 	var template_id = 'template_hsG6LtN8';
 	var template_params = {
+	to_email: 'salama.abdul@gmail.com',
 	to_name: 'James',
 	from_name: 'HomeFit',
 	message_body: body,
