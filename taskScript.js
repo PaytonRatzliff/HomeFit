@@ -53,31 +53,54 @@ function sendReminder() {
 
 	var numChecked = 0;
 	var checkBoxes = document.getElementsByName('checkBoxName');
+	var tasksText = '';
 	for(var i = 0; i < checkBoxes.length; ++i)
 	{
 		if (checkBoxes[i].checked)
 		{
 			numChecked = numChecked + 1;
+			var labelNum = i + 1;
+			var label = document.getElementById('checkBoxLabel' + labelNum)
+			tasksText += label.textContent.trim();
+			tasksText += "\n";
 		}
 	}
 
 	if (numChecked == 0)
 	{
 		alert("Please check one or more tasks for the reminder notification");
+		return;
 	}
 
-			alert("A reminder has been sent to your email and phone.");
+	// Send Text Notification
+	var body = 'HomeFit Tasks Notification\n';
+	body += 'This is a reminder for the following tasks:\n';
+	body += tasksText;
 
-	// node SendSMS.js
+	var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "POST", "https://api.twilio.com/2010-04-01/Accounts/AC75bccad271450edbcf17ff5d922f3e4a/Messages.json", false ); // false for synchronous request
+    xmlHttp.setRequestHeader("Authorization", "Basic QUM3NWJjY2FkMjcxNDUwZWRiY2YxN2ZmNWQ5MjJmM2U0YTo5ZTg5OTVjZDU0MWNhOTllNzQ1MjE0MjNjOTk1ZjMyYw==");
+    xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+    xmlHttp.send('To=4255771308&From=%2B12069008210&Body=' + body);
 
 
-	//var response = httpGet("https://api.tropo.com/1.0/sessions?action=create&token=4c56634e4e634f61486763656856424f496e4d6f69645447444b6962626c706a50634f634648724f786d4458");
-	//alert(response)
-	alert("0")
+    // Send Email Notification
+    var service_id = 'gmail';
+	var template_id = 'template_hsG6LtN8';
+	var template_params = {
+	to_name: 'James',
+	from_name: 'HomeFit',
+	message_body: body,
+	};
 
-	var res2 = httpPost("lsdf")
-	alert(res2)
-	alert('1')
+	emailjs.send(service_id,template_id,template_params);
+
+
+	alert("A reminder has been sent to your email and phone for the following tasks:\n" + tasksText);
+
+
+
+
 
 	//var twilio = require('twilio');
 	//alert("1")
@@ -86,17 +109,7 @@ function sendReminder() {
  //  	client.sendMessage( { to:'4255771308', from:'2069008210', body:'Hello! Hope you’re having a good day!' }, function( err, data ) {});
 	
  // 	alert('0')
-	// var service_id = 'gmail';
-	// var template_id = 'template_hsG6LtN8';
-	// var template_params = {
-	// to_name: 'Ed L',
-	// from_name: 'Abdulra Salama',
-	// reply_email: 'john@doe.com',
-	// message: 'This is awesome! Abdul'
-	// };
-	// alert('1')
-	// emailjs.send(service_id,template_id,template_params);
-	// alert('2')
+
 
 
 // 	cronJob = require('cron').CronJob;
