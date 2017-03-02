@@ -102,9 +102,10 @@ table {
 }
 
 #icon {
-	width: 140%;
+	width: 100%;
 	display: block;
 	margin: auto;
+	border-radius: 50%;
 }
 
 #loginForm {
@@ -137,7 +138,7 @@ table {
 	padding: 1%;
 	float: left;
 	width: 13%;
-	background-color: white;
+	background-color: rgb(10, 63, 84);
 	height: 750px;
 }
 
